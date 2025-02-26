@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina2Formulario</title>
+     <!-- Importando o CSS específico da Página 2 -->
+     <link rel="stylesheet" href="css/estilo_pagina2.css">
+    
+    <h1 style="text-align: center;">Cadastro de Cliente</h1>
+</head>
+<body>
+    <form action="#">
+        <legend >Cadastro</legend>
+        <fieldset id="dados-pessoais">
+            <legend>Dados Pessoais</legend>
+            <label>
+                Nome: <input type="text" required> 
+            </label>
+            <label>
+                Telefone: <input type="number" required>
+            </label>
+            <label id="cpf">
+                Cpf: <input type="number" required>
+            </label>
+            <label>
+                E-mail: <input type="text" required>
+            </label>
+        </fieldset>
+        <fieldset id="endereco">
+            <legend>Endereço</legend>
+            <label>
+                Rua: <input id="rua" type="text" required>
+            </label>
+            <label>
+                Número: <input type="number" required>
+            </label>
+            <label>
+                Bairro: <input id="bairro" type="text" required>
+            </label>
+            <label>
+                Cidade: <input id="cidade" type="text" required>
+            </label>
+            <label>
+                UF: <input id="uf" type="text" required>
+            </label>
+            <label>
+                Cep: <input type="number" required>
+            </label>
+        </fieldset>
+        <fieldset id="botao">
+            
+            <button ><a href="index.html">Cadastrar</a> </button>
+            <input type="reset" value="Limpar Campos">
+        </fieldset>
+        </form>
+        
+    
+</body>
+</html>
