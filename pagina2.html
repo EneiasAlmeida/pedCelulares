@@ -15,38 +15,51 @@
         <fieldset id="dados-pessoais">
             <legend>Dados Pessoais</legend>
             <label>
-                Nome: <input type="text" required> 
+                Nome: <input id="nome" type="text" required> 
             </label>
+              
+            
+        <div class="linha"><!-- Div para agrupar Telefone e CPF na mesma linha -->
             <label>
-                Telefone: <input type="number" required>
+                Telefone: <input id="telefone" type="number" required>
             </label>
             <label id="cpf">
-                Cpf: <input type="number" required>
+                Cpf: <input id="cpf" type="number" required>
             </label>
+        </div>
             <label>
-                E-mail: <input type="text" required>
+                E-mail: <input id="email" type="text" required>
             </label>
         </fieldset>
         <fieldset id="endereco">
             <legend>Endereço</legend>
-            <label>
-                Rua: <input id="rua" type="text" required>
-            </label>
-            <label>
-                Número: <input type="number" required>
-            </label>
-            <label>
-                Bairro: <input id="bairro" type="text" required>
-            </label>
-            <label>
-                Cidade: <input id="cidade" type="text" required>
-            </label>
-            <label>
-                UF: <input id="uf" type="text" required>
-            </label>
-            <label>
-                Cep: <input type="number" required>
-            </label>
+            
+            <div id="linhaRua">
+                <label>
+                    Rua: <input id="rua" type="text" required>
+                </label>
+                <label>
+                    Número: <input id="numero" type="number" required>
+                </label>
+            </div>
+            
+            <div id="linhaBairro">
+                <label>
+                    Bairro: <input id="bairro" type="text" required>
+                </label>
+                <label>
+                    Cidade: <input id="cidade" type="text" required>
+                </label>
+            </div>
+            
+            <div id="linhaUs">
+                <label>
+                    UF: <input id="uf" type="text" required>
+                </label>
+                <label>
+                    Cep: <input id="cep" type="number" required>
+                </label>
+            </div>
         </fieldset>
         <fieldset id="botao">
             

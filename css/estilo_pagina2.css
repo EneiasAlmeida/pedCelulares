@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Estilos exclusivos da Página 2 */
+body {
+    background-color: #e7d3d3;
+    font-family: sans-serif;
+}
+form{
+    width: 60%;
+    height: 650px;
+    margin: auto;
+    background-color: #d6a8a8;
+}
+fieldset{
+    color: rgb(35, 32, 32);
+    height: 10%;
+    border-radius: 10px;
+}
+#dados-pessoais{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 15px;
+
+}
+#dados-pessoais input {
+    width: 100%; /* Faz os campos ocuparem toda a largura disponível dentro do fieldset */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#nome{
+    width: 90% !important;
+}
+#telefone{
+    width: 35% !important;      
+}
+#cpf{
+    width: 45% !important; 
+}
+#mai{
+    width: 45% !important; 
+}
+#endereco {
+    height: 35%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 15px;
+    gap: 10px; /* Aumenta o espaço entre as linhas */
+}
+
+#linhaRua, #linhaBairro, #linhaUs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Adiciona espaçamento entre os campos de cada linha (Rua, Número, Bairro, Cidade, etc.) */
+
+}
+
+#linhaRua label, #linhaBairro label, #linhaUs label {
+    width: 48%; /* Ajusta a largura dos campos para que eles fiquem bem distribuídos dentro da linha */
+
+}
+
+#rua, #numero, #bairro, #cidade, #uf, #cep {
+    width: 100%; /* Garante que os inputs ocupem toda a largura disponível */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input, select{
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+}
+legend{
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+#botao{
+    
+    background-color: rgb(78, 72, 73);
+    padding: 5px;
+    margin-top: 10px;    
+}
+#botao input[type="submit"] {
+    
+    margin-left: 65px;
+    margin-right: 80px; /* Adiciona espaço entre os botões */    
+}
+button{
+    border-radius: 6px;
+    border: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+
